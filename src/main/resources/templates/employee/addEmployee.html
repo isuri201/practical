@@ -15,14 +15,14 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-3">
-            <form action="/employee" method="post" data-th-object="${person}">
+            <form action="/employee" method="post" >
                 <h1>Employee form</h1>
-                <label data-th-for="${id}">ID</label>
-                <input type="text" data-th-field="*{id}" class="form-control">
-                <label data-th-for="${name}">Name</label>
-                <input type="text" data-th-field="*{name}" class="form-control">
-                <label data-th-for="${mobile}">Mobile</label>
-                <input type="text" data-th-field="*{mobile}" class="form-control">
+                <label for="id" >ID</label>
+                <input type="text" name="id" id="id" class="form-control">
+                <label >Name</label>
+                <input type="text" name="name" id="name" class="form-control">
+                <label >Mobile</label>
+                <input type="text" name="mobile" id="mobile" class="form-control">
                 <input type="submit" class="btn btn-success mt-3">
                 <input type="reset" class="btn btn-success mt-3">
 
