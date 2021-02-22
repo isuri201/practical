@@ -10,7 +10,7 @@ import java.util.List;
 @Service
 public class StudentService {
     private final StudentDao studentDao;
-
+//add new student
     public StudentService(StudentDao studentDao) {
         this.studentDao = studentDao;
     }
@@ -25,5 +25,9 @@ public class StudentService {
 
     public Student persist(Student student) {
         return studentDao.save(student);
+    }
+    public void deleteById(Integer id){
+        studentDao.deleteById(id);//methanta void damme ai
+
     }
 }
